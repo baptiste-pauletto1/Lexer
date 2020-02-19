@@ -12,13 +12,22 @@ public:
     Automate(Lexer * l);
     void decalage(Symbole * s, Etat * e);
     void reduction(int n, Symbole * s);
-    void accepter();
+    Symbole * popSymbol();
+    void afficherPile();
+    void popAndDestroySymbol();
+    int getResultat();
+    void setResultat(int val);
+    void setVI(int val);
+    void mult();
+    void add();
     void lancer();
 
 private:
     stack<Symbole*> pileSymboles;
     stack<Etat*> pileEtats;
     Lexer * lexer;
+    int resultat;
+    int variableIntermediaire;
 };
 
 #endif // AUTOMATE_H

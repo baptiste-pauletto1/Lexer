@@ -10,7 +10,23 @@ void Entier::Affiche() {
    cout<<"("<<valeur<<")";
 }
 
+void Expression::Affiche() {
+   Symbole::Affiche();
+}
+
+void ExprPlus::Affiche() {
+   Symbole::Affiche();
+}
+
+void ExprMult::Affiche() {
+   Symbole::Affiche();
+}
+
 bool Symbole::estTerminal(){
     return ( this->ident == 6 ? false : true );
+}
+
+int Symbole::getValeur(){
+    return 0;
 }
 

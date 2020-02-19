@@ -4,16 +4,17 @@
 
 
 int main(void) {
-   string chaine("(1+34)*123");
+   string chaine("(1*2+34)*123");
 
    Lexer l(chaine);
-   Automate automate (&l);
-   Symbole * s;
-   while(*(s=l.Consulter())!=FIN) {
-      s->Affiche();
-      cout<<endl;
-      l.Avancer();
-   }
+   Automate * automate = new Automate(&l);
+   //Symbole * s;
+   //while(*(s=l.Consulter())!=FIN) {
+   //   s->Affiche();
+   //   cout<<endl;
+   //   l.Avancer();
+   //}
+   automate->lancer();
    return 0;
 }
 

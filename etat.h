@@ -13,6 +13,7 @@ public:
     Etat(string name);
     Etat();
     virtual ~Etat();
+    string afficheNom() {return name;}
     virtual bool transition(Automate & automateCopain,
                             Symbole * s) = 0;
 protected:
@@ -22,7 +23,7 @@ protected:
 class Etat0 : public Etat
 {
 public:
-    Etat0() {}
+    Etat0() : Etat("Etat0") {}
     ~Etat0() {}
     bool transition(Automate & automateCopain, Symbole * s);
 };
@@ -31,7 +32,7 @@ public:
 class Etat1 : public Etat
 {
 public:
-    Etat1() {}
+    Etat1() : Etat("Etat1") {}
     ~Etat1() {}
     bool transition(Automate & automateCopain, Symbole * s);
 };
@@ -39,7 +40,7 @@ public:
 class Etat2 : public Etat
 {
 public:
-    Etat2() {}
+    Etat2() : Etat("Etat2") {}
     ~Etat2() {}
     bool transition(Automate & automateCopain, Symbole * s);
 };
@@ -47,7 +48,7 @@ public:
 class Etat3 : public Etat
 {
 public:
-    Etat3() {}
+    Etat3() : Etat("Etat3") {}
     ~Etat3() {}
     bool transition(Automate & automateCopain, Symbole * s);
 };
@@ -55,7 +56,7 @@ public:
 class Etat4 : public Etat
 {
 public:
-    Etat4() {}
+    Etat4() : Etat("Etat4") {}
     ~Etat4() {}
     bool transition(Automate & automateCopain, Symbole * s);
 };
@@ -63,7 +64,7 @@ public:
 class Etat5 : public Etat
 {
 public:
-    Etat5() {}
+    Etat5() : Etat("Etat5") {}
     ~Etat5() {}
     bool transition(Automate & automateCopain, Symbole * s);
 };
@@ -71,7 +72,7 @@ public:
 class Etat6 : public Etat
 {
 public:
-    Etat6() {}
+    Etat6() : Etat("Etat6") {}
     ~Etat6() {}
     bool transition(Automate & automateCopain, Symbole * s);
 };
@@ -79,7 +80,7 @@ public:
 class Etat7 : public Etat
 {
 public:
-    Etat7() {}
+    Etat7() : Etat("Etat7") {}
     ~Etat7() {}
     bool transition(Automate & automateCopain, Symbole * s);
 };
@@ -87,7 +88,7 @@ public:
 class Etat8 : public Etat
 {
 public:
-    Etat8() {}
+    Etat8() : Etat("Etat8") {}
     ~Etat8() {}
     bool transition(Automate & automateCopain, Symbole * s);
 };
@@ -95,7 +96,7 @@ public:
 class Etat9 : public Etat
 {
 public:
-    Etat9() {}
+    Etat9() : Etat("Etat9") {}
     ~Etat9() {}
     bool transition(Automate & automateCopain, Symbole * s);
 };
