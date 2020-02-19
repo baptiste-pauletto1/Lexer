@@ -60,7 +60,7 @@ bool Etat3::transition(Automate & automateCopain, Symbole *s){
     case CLOSEPAR:
     case FIN:
     case PLUS:
-        automateCopain.reduction(5,s);
+        automateCopain.reduction(1,s);
         break;
     default:
         break;
@@ -121,7 +121,7 @@ bool Etat7::transition(Automate & automateCopain, Symbole *s){
     case CLOSEPAR:
     case FIN:
     case PLUS:
-        automateCopain.reduction(2,s);
+        automateCopain.reduction(3,s);
         break;
     default:
         break;
@@ -149,7 +149,7 @@ bool Etat9::transition(Automate & automateCopain, Symbole *s){
     case CLOSEPAR:
     case FIN:
     case PLUS:
-        automateCopain.reduction(4,s);
+        automateCopain.reduction(3,s);
         break;
     default:
         break;
