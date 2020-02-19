@@ -10,3 +10,7 @@ void Entier::Affiche() {
    cout<<"("<<valeur<<")";
 }
 
+bool Symbole::estTerminal(){
+    return ( this->ident == 6 ? false : true );
+}
+
